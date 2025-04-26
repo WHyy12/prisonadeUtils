@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "prisonadeutils",
+  "version": "1.0",
+  "name": "prisonadeUtils",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/prisonadeutils/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.Whyy12.prisonadeutils.client.PrisonadeutilsDataGenerator"
+    ],
+    "client": [
+      "com.Whyy12.prisonadeutils.client.PrisonadeutilsClient"
+    ],
+    "main": [
+      "com.Whyy12.prisonadeutils.Prisonadeutils"
+    ]
+  },
+  "mixins": [
+    "prisonadeutils.mixins.json",
+    {
+      "config": "prisonadeutils.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric": "*",
+    "minecraft": "1.21.5"
+  }
+}
