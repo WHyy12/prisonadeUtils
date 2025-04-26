@@ -61,7 +61,7 @@ public class PrisonadeutilsClient implements ClientModInitializer {
             int[] pvs = divmod(stacks[0], 54);
 
             // Render amounts of needed ore in amount of stacks and amount of pvs filled.
-            context.drawTextWithShadow(textRenderer, CalculatorState.amounts.get(i) + ": " + pvs[0] + " Pvs, " + pvs[1] + " stacks, and " + stacks[1], 0, y, 0xFFFFFF);
+            context.drawTextWithShadow(textRenderer, CalculatorState.ores.get(i) + " - " + CalculatorState.amounts.get(i) + ": " + pvs[0] + " Pvs, " + pvs[1] + " stacks, and " + stacks[1], 0, y, 0xFFFFFF);
             y += textRenderer.fontHeight;
         }
     }
