@@ -57,13 +57,11 @@ public class PrisonadeutilsClient implements ClientModInitializer {
 
         y += textRenderer.fontHeight;
         for (int i = 0; i < CalculatorState.ores.size(); i++) {
-            String ore = CalculatorState.ores.get(i);
-
             int[] stacks = divmod(CalculatorState.amounts.get(i) * CalculatorState.mixAmount, 64);
             int[] pvs = divmod(stacks[0], 54);
 
             // Render amounts of needed ore in amount of stacks and amount of pvs filled.
-            context.drawTextWithShadow(textRenderer, ore + ": " + stacks[0] + " stacks and " + stacks[1] + ": " + pvs[0] + " Pvs and " + pvs[1] + " and " + stacks[1], 0, y, 0xFFFFFF);
+            context.drawTextWithShadow(textRenderer, CalculatorState.amounts.get(i) + ": " + pvs[0] + " Pvs, " + pvs[1] + " stacks, and " + stacks[1], 0, y, 0xFFFFFF);
             y += textRenderer.fontHeight;
         }
     }
