@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "test.prisonadeutils.mixin.client",
+  "package": "com.Whyy12.prisonadeutils.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
   ],

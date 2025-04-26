@@ -11,13 +11,13 @@
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
-      "test.prisonadeutils.client.PrisonadeutilsDataGenerator"
+      "com.Whyy12.prisonadeutils.client.PrisonadeutilsDataGenerator"
     ],
     "client": [
-      "test.prisonadeutils.client.PrisonadeutilsClient"
+      "com.Whyy12.prisonadeutils.client.PrisonadeutilsClient"
     ],
     "main": [
-      "test.prisonadeutils.Prisonadeutils"
+      "com.Whyy12.prisonadeutils.Prisonadeutils"
     ]
   },
   "mixins": [
