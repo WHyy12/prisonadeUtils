@@ -8,6 +8,8 @@ public class CalculatorState {
     public static List<String> ores = new ArrayList<>(List.of("Stone", "Iron"));
     public static List<Integer> amounts = new ArrayList<>(List.of(1, 1));
     public static Integer mixAmount = 1;
+    public static int windowX = 0;
+    public static int windowY = 0;
     public static final Map<String, Map<String, Map<String, Integer>>> AREAS = new LinkedHashMap<>();
 
     static {
